@@ -36,22 +36,36 @@ Methods include algebraic simplification, K-Maps, and the Quine–McCluskey meth
 
 **Program:**
 
-module exp2(a,b,c,d,w,x,y,z,f1,f2);
-input a,b,c,d,w,x,y,z;
-output f1,f2;
-assign f1=((~b&~d)|(~a&b&d)|(a&b&~c));
-assign f2=((~y&z)|(w&y)|(x&y));
+
+i)
+module funct1(a,b,c,d,f1);
+input a,b,c,d;
+output f1;
+assign f1=((~b & ~d)|(~a & b & d)|(a & b & ~c));
+endmodule
+
+
+ii)
+module funct2(w,x,y,z,f2);
+input w,x,y,z;
+output f2;
+assign f2=((~y & z)|( w & y )|(x & y));
 endmodule
 
 Developed by/ RegisterNumber:DHARSHANSHRI DA/25017586
 
 
 **RTL realization**
-<img width="1920" height="1080" alt="Screenshot 2025-11-17 135614" src="https://github.com/user-attachments/assets/1c8b24ac-25a4-4d27-80bc-18e50bbf87eb" />
+<img width="1064" height="544" alt="image" src="https://github.com/user-attachments/assets/25207c0e-450d-42f0-8042-77955ad32893" />
+
+<img width="1026" height="539" alt="image" src="https://github.com/user-attachments/assets/42031d01-a7b8-48a7-81d6-d2a0d8156d0b" />
 
 
 **Output:**
-![WhatsApp Image 2025-11-17 at 13 59 33_99697faf](https://github.com/user-attachments/assets/eef20f09-cc13-453b-807f-732018ab7b10)
+<img width="1043" height="525" alt="image" src="https://github.com/user-attachments/assets/82a2a862-1b90-428f-8734-e7daa5eaeb63" />
+
+<img width="1034" height="494" alt="image" src="https://github.com/user-attachments/assets/b9e1c246-6005-42da-b75d-cf6f2a3021f1" />
+
 *Result:*
 
 Thus the given logic functions are implemented using and their operations are verified using Verilog programming.
