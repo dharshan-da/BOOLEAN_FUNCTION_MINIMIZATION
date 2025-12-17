@@ -38,6 +38,7 @@ Methods include algebraic simplification, K-Maps, and the Quine–McCluskey meth
 
 
 i)
+```
 module funct1(a,b,c,d,f1);
 input a,b,c,d;
 output f1;
@@ -51,6 +52,7 @@ input w,x,y,z;
 output f2;
 assign f2=((~y & z)|( w & y )|(x & y));
 endmodule
+```
 
 Developed by/ RegisterNumber:DHARSHANSHRI DA/25017586
 
